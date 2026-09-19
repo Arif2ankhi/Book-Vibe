@@ -16,7 +16,8 @@ const Navbar = () => {
    
     </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+   <nav className='bg-base-100 shadow-sm'>
+         <div className="navbar  container mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +34,7 @@ const Navbar = () => {
     </Link>
     <div className='flex gap-2 items-center'>
      
-    <Image src={logo}/>
+    <Image src={logo} alt="logo of the app"/>
     Book Vibe
     </div>
   </div>
@@ -47,6 +48,7 @@ const Navbar = () => {
     <a className="btn btn-warning">Sign up</a>
   </div>
 </div>
+   </nav>
     );
 };
 
