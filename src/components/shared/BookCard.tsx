@@ -1,5 +1,6 @@
 import { IBook } from '@/type/books.type';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaStar, FaBookOpen } from 'react-icons/fa';
 
@@ -105,10 +106,15 @@ const BookCard = ({book}: IBookCardProps) => {
             </p>
           </div>
 
+          <Link href ={`/books/${book.bookId}`}>
+
           <button className="btn btn-primary rounded-full px-5 shadow-md transition-all hover:scale-105">
             <FaBookOpen />
-            Details
+            View Details
           </button>
+          </Link>
+
+          
 
         </div>
       </div>
