@@ -2,11 +2,14 @@ import React from "react";
 import BookCard from "../BookCard";
 import { IBook } from "@/type/books.type";
 
-const getBooks = async()=>{
+export const dynamic = "force-dynamic";
 
-  try{
-     const response = await fetch
-  (`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}}/booksData.json`);
+const getBooks = async()=>{
+   try{
+
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`, {cache: 'no-store'}
+    );
    const data = await response.json();
   return data;
 

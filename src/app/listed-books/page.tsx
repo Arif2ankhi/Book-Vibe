@@ -1,10 +1,9 @@
 "use client";
-import BookCard from "@/components/shared/BookCard";
+// import BookCard from "@/components/shared/BookCard";
 import ListedBooksCard from "@/components/shared/ListedBookCard";
 import { BooksContext } from "@/context/BooksContext";
 import { IBook } from "@/type/books.type";
-import Image from "next/image";
-import { useServerInsertedHTML } from "next/navigation";
+// import Image from "next/image";
 import React, { useContext, useState } from "react";
 
 const ListedBooks = () => {
